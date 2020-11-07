@@ -1,0 +1,7 @@
+{
+  "name": "Bestem20AdobeChallenge",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
