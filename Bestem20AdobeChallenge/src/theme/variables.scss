@@ -75,11 +75,18 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-color-button: #008C76FF;
+}
+//fonts
+
+@font-face{
+  font-family:sedgwick;
+  src: url("../assets/fonts/SedgwickAveDisplay-Regular.ttf");
 }
 @font-face{
-  font-family:SedgwickAveDisplay-Regular;
-  font-style: regular;
-  src: url("../assets/fonts/SedgwickAveDisplay-Regular.ttf");
+  font-family: robotobold;
+  src: urc("../assets/fonts/Roboto-Bold.ttf")
 }
 
 @media (prefers-color-scheme: dark) {

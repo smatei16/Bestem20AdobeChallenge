@@ -1,26 +1,53 @@
+<style>
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .center2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 100%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .buton {  width: 44%;position: absolute; left: 28%;right:28%;border-radius: 25px;height: 25%;top: 60%;background-color: #008C76FF; font-family: robotobold;font-size: x-large;}
+  .title {font-family:sedgwick;font-weight: bold;font-size:xx-large;}
+  
+  </style>
+<!--<div>-->
 <ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
-
-    <ion-buttons slot="end">
+    <div id="titlu" font-family:sedgwick>
+      <h1 class="title" style="text-align: center">ArtMaps</h1>
+    </div>
+   <!--- <ion-buttons slot="end">
       <ion-button>
         <ion-icon slot="start" name="search" shape="round" color="secondary"></ion-icon> 
       </ion-button>
-    </ion-buttons>
+    </ion-buttons> -->
   
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div id="titlu">
-    <h1>Art</h1>
-    <h1>Maps</h1>
+  
+  <div  class="center" id="butonlogindiv">
+    <ion-button class="buton" id="butonlogin" routerLink="/login" color="#008C76FF">Log In</ion-button>
   </div>
-  <div id="butonlogin">
-    <ion-button routerLink="/login">Log In</ion-button>
-  </div>
-  <div>
-    <ion-button routerLink="/signup">Sign Up</ion-button>
+  <div class="center2" id="butonsignupdiv">
+    <ion-button class="buton" id="butonsignup" routerLink="/signup" color="#008C76FF">Sign Up</ion-button>
   </div>
 
   
 </ion-content>
+<!--</div>-->

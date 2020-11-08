@@ -1,25 +1,33 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button color="primary" routerLink="/home">
-        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/login">Log in</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<style>
+  .center{  
+  background-color: #008C76FF;
+  font-family: robotobold;
+  font-size: x-large;
+  }
+</style>
 
-<ion-content>
-  <h1>Create your<br />Account</h1>
 
-  <form id="form">
-    <app-input placeholder="Your Name"></app-input>
-    <app-input placeholder="Email"></app-input>
-    <app-input type="password" placeholder="Password"></app-input>
-    <ion-button expand="block" shape="round">Join Us</ion-button>
-  </form>
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-button color=#008C76FF routerLink="/home">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button routerLink="/login">Log in</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 
-  <p>By pressing 'Join Us' you agree to <br />our terms & conditions.</p>
-</ion-content>
+  <ion-content>
+    <h1>Create your<br />Account</h1>
+
+    <form id="form">
+      <app-input placeholder="Your Name"></app-input>
+      <app-input placeholder="Email"></app-input>
+      <app-input type="password" placeholder="Password"></app-input>
+      <ion-button expand="block" class="center" color=#008C76FF shape="round">Join Us</ion-button>
+    </form>
+  
+  </ion-content>
